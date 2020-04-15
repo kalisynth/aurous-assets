@@ -1,0 +1,71 @@
+<h2>Tablet Details</h2> 
+
+<hr/>
+<div *ngIf="tabletData">
+  <button (click)="editPokemon()" class="btn btn-info">Edit Details</button> | 
+  <button (click)="sendToClient()" class="btn btn-info">Send to Client</button> | 
+  <button (click)="returnedFromClient()" class="btn btn-info">Returned from Client</button> | 
+  <button (click)="setFactoryReset()" class="btn btn-danger">Factory Reset</button> | 
+  <button (click)="deletePokemon()" class="btn btn-danger">Delete Tablet</button> 
+  <div>
+    <label><b>Name: </b></label> {{tabletData.name}}
+  </div>
+  <div>
+    <label><b>Current Status: </b></label> {{tabletData.status}}
+  </div>
+  <div>
+    <label><b>Inital Setup Date: </b></label> {{tabletData.initSetup}}
+  </div>
+  <div>
+    <label><b>Last Updated Date: </b></label> {{tabletData.lastSetup}}
+  </div>
+  
+  <br />
+
+  <mat-divider></mat-divider>
+  <div>
+    <label><b>IMEI: </b></label> {{tabletData.imei}}
+  </div>
+  <div>
+    <label><b>Phone #: </b></label> {{tabletData.phone}}
+  </div>
+  <div>
+    <label><b>Sim #: </b></label> {{tabletData.sim}}
+  </div>
+  <div>
+    <label><b>Model #: </b></label> {{tabletData.modelnum}}
+  </div>
+  <div>
+    <label><b>Serial #: </b></label> {{tabletData.serialnum}}
+  </div>
+
+  <br />
+
+  <div>
+    <label><b>Skype Id: </b></label> {{tabletData.skypeId}}
+  </div>
+  <div>
+    <label><b>Skype Link: </b></label> {{tabletData.skypeUrl}}
+  </div>
+
+  <br />
+  
+  <div>
+    <label><b>Sent To Client: </b></label> {{tabletData.sentToClient}}
+  </div>
+  <div>
+    <label><b>Sent To Client Date: </b></label> {{tabletData.dateSent}}
+  </div>
+  <div>
+    <label><b>Client Name: </b></label> {{tabletData.clientName}}
+  </div>
+  <div>
+    <label><b>Client Provider: </b></label> {{tabletData.clientProvider}}
+  </div>
+  <div>
+    <label><b>Client Program: </b></label> {{tabletData.clientProgram}}
+  </div>
+  <mat-divider></mat-divider>
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Tablet List</button><br>

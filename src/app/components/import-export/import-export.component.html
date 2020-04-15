@@ -1,0 +1,16 @@
+<h3>Import / Export DB</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">JSON String</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="saveString" name="name">
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+</div>

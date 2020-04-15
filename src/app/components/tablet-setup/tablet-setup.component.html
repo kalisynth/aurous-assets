@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<!-- APP: DEVICE SETUP WEBSITE
+  PROGRAMMER: TIM HOOPER
+  DATE: 2020
+  COMPANY: AUROUS DIGITAL DEPARTMENT
+  SCREEN: Setup -->
+
+<head>
+  <title>Device Setup</title>
+</head>
+
+<body>
+  
+  <div id="signInStep" class="tabcontent">
+    <h1>Sign in and Preperation</h1>
+        <ol>
+          <li>Before beginning this process make sure the device is at least 50% charged and has been added to the Tablet List</li>
+          <li>Sign in to the device using the device's assigned email <span id='emailName'>example</span>@nacweb.org and the password if you do not know the password ask a Technology Support Officer in Teams or send an email to helpdesk@nacweb.org</li>
+          <li>Name/Location/Values of settings can be different from device to device, and some devices might not have all the settings listed in this setup guide</li>
+          <li>Go to device settings and check for updates manually and if there are updates download and install those before continuing, keep repeating this step until the device says that it has the most recent update</li>
+        </ol>
+  </div>
+
+  <div id="gamesStep" class="tabcontent">
+    <h1>Games</h1>
+    <ol>
+      <li>if you do not have a copy of TabletSetup.zip please ask a Technology Support Officer in Teams or email helpdesk@nacweb.org</li>
+      <li>Copy the zip file to the Device Downloads</li>
+      <li>Extract the zip file to the Downloads folder</li>
+      <li>Copy the Pictures folder to Internal Storage(where the other 'Pictures' folder is) and overwrite/replace the folder if you are asked to.
+      <li>Open the Games folder</li>
+      <li>Install all the apps in the games folder</li>
+      <ol type="a">
+        <li><i>If it asks if you want to allow from unknown sources make sure to enable that</i></li>
+      </ol>
+    </ol>
+  </div>
+
+  <div id="dataStep" class="tabcontent">
+    <h1>Data</h1>
+    <ol>
+      <li>Open the device <b>Settings</b></li>
+      <li>Go to the <b>Connection\Data</b> settings tab</li>
+      <li>Change the billing cycle range to <i>26th</i></li>
+      <li>Enable and Set the Data limit to <i>3gb</i></li>
+      <li>Set Warning to <i>2gb</i></li>
+    </ol>
+  </div>
+
+  <div id="displayStep" class="tabcontent">
+    <h1>Display</h1>
+    <ol>
+      <li>Open the Display Settings Tab</li>
+      <li>Change Brightness setting to full</li>
+      <li>Set Screen Timeout to 5 minutes</li>
+      <li>Change Font Size to Large</li>
+      <li>Make sure Device is rotated in Landscape and then disable Rotation</li>
+      <li>Change the Lock Screen to Swipe</li>
+      <li>Open the Wallpaper app</li>
+      <ol type="a">
+        <li>if there is no Wallpaper app, please open the playstore and download it from there</li>
+      </ol>
+      <li>Select Solid Colors</li>
+      <li>Tap on the Gray Color</li>
+      <li>Tap on Set Wallpaper</li>
+      <li>Tap on Both</li>
+    </ol>
+  </div>
+
+  <div id="skypeStep" class="tabcontent">
+    <h1>Skype</h1>
+    <ol>
+      <li>Download/Update/Install Skype</li>
+      <li>Sign in using the device email address <span id="skypeName">example</span>@nacweb.org</li>
+      <li>If the account doesnt exist then tap the link that says "or get a new one"</li>
+      <li>Then create a skype account using the password found in Pins and Passwords and the first name as the device name and the last name as DCVS</li>
+      <li>Add volunteer1dcvs, volunteer2dcvs, dcvs_coordinator@nacweb.org to the contacts</li>
+      <ol type="a">
+        <li><i>if setting up a device for a program other then DCVS then just add officedcvs, and refer to that program to find out what other contact you need to add</i></li>
+      </ol>
+      <li>Open Skype settings and enable auto answer, auto turn on video and accept calls only from contacts</li>
+      <ol type="a">
+        <li>Skype settings can be found in the Chat tab in skype and then tap on the circle with 2 letters, then tap on settings</li>
+      </ol>
+    </ol>
+  </div>
+
+  <div id="aurousStep" class="tabcontent">
+    <h1>Aurous</h1>
+
+    <h2>Aurous Plus</h2>
+    <ol>
+      <li>Check that you have the latest version of the Aurous App from the playstore</li>
+      <li>Open the App once it has been installed and click on Google Sign in</li>
+      <li>pick the <span id="aurousName">example</span>@nacweb.org account</li>
+      <li>Tap on the 3 dots in the top right corner and go to options</li>
+      <ol type="a">
+        <li>click on unlock aurous services with code</li>
+        <li>use the pin from pins and passwords</li>
+      </ol>
+      <li>Tap on the Aurous Services button</li>
+      <li>Tap on add DCVS Contacts</li>
+    </ol>
+
+    <h2>Aurous Exercises</h2>
+    <ol>
+      <li>Make sure the exercises have been copied over</li>
+      <li>Check that Aurous Exercise is installed, if not then install from apk in Tablet Setup Folder</li>
+      <li>Open Aurous Execises make sure to allow on the permission it asks for</li>
+    </ol>
+
+    <h2>Aurous Services</h2>
+    <ol>
+      <li>Check that Aurous Services is installed on the tablet</li>
+      <li>Open the Settings -> Apps -> Aurous Services</li>
+      <li>Tap on Apps that can appear on top</li>
+      <li>Tap on Allow Permission</li>
+      <li>Tap on Permissons and enable storage</li>
+    </ol>
+
+    <h2>Group</h2>
+    <ol>
+      <li>Open Aurous Service App</li>
+      <li>Tap on Group</li>
+      <li>Tap on Refresh Groups</li>
+      <li>Tap on General Group Chat</li>
+      <li>if it asks to open in Meet or Chrome select Always then select Meet</li>
+      <li>Tap on Install if it asks you to install</li>
+      <li>Tap on Continue</li>
+      <li>When asked to give permission for Audio and Video make sure to allow</li>
+      <li>if you get an error trying to join a meeting, find GeneralGroup[2].json in the tablet setup folder and move that to the aurousGroups folder and try joining again, if that works delete the other GeneralGroup.json file</li>
+    </ol>
+  </div>
+
+  <div id="novaStep" class="tabcontent">
+    <h1>NovaLauncher</h1>
+    <ol>
+      <li>Open Nova Launcher Settings</li>
+      <li>Tap on Backup and Import Settings</li>
+      <li>Tap on Backup</li>
+      <li>Tap on ok and accept the permissions it asks for</li>
+      <li>Go to the Tablet Setup folder and copy the AurousNova.novabackup file to 'home folder'/data/com.telsacoilsw.launcher/backup</li>
+      <li>Go back to Nova Settings -> Backup and Import Settings</li>
+      <li>Tap on Restore or manage backups</li>
+      <li>Tap on AurousService -> ok</li>
+    </ol>
+  </div>
+
+  <div class="tabcontent" id="findMyDeviceStep">
+    <h1>Find my Device</h1>
+    <ol>
+      <li>Open Biometrics and Security settings</li>
+      <li>Add account</li>
+      <li>Sign in with google</li>
+      <li>Tap allow when asked</li>
+      -- or --
+      <li>If sign in with google is not available, create an account using the table email and password, first name will be the tablet name and last name will be dcvs, DOB - 01/01/1981</li>
+      <li>Agree to allow</li>
+      <li>Wait for the email from samsung then open it and click on the 'verify' button</li>
+    </ol>
+  </div>
+
+  <div id="accessStep" class="tabcontent">
+    <h1>Accessibility</h1>
+    <ol>
+      <li>Download/Update Android Accessibility Suite</li>
+      <li>Go to Tablet Settings -> Accessibility</li>
+      <li>Enable the NovaLauncher setting</li>
+      <li>Enable Select to Speak</li>
+      <li>Dexterity -> Touch and hold delay -> Custom 5secs</li>
+    </ol>
+  </div>
+
+  <div class="tabcontent" id="finishStep">
+    <h1>Finish</h1>
+    <ol>
+      <li>Go to the tablet list and make sure to update any relevant info</li>
+      <li>Hand to another person for checking</li>
+      <li>Finished</li>
+    </ol>
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Select Tablet that you setup</label>
+    <select [(ngModel)]="selectedTabletId" class="form-control" name="name">
+      <option *ngFor="let c of tabletsList" [ngValue]="c.id">{{c.viewValue}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-success">Edit</button>
+</form>
+</body>
