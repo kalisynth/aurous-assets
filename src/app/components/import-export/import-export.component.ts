@@ -10,6 +10,7 @@ export class ImportExportComponent implements OnInit {
   saveString: string;
   submitted = false;
   private tabletsDbKey: string = 'tabletsDB';
+  downloadJsonHref;
 
   constructor(private api:ApiService) { }
 
@@ -23,6 +24,10 @@ export class ImportExportComponent implements OnInit {
 
   saveJsonString(){
     localStorage.setItem(this.tabletsDbKey, this.saveString);
+  }
+
+  saveToFile(){
+    this.downloadJsonHref = this.api.generateJsonDownload(this.saveString);
   }
 
   onSubmit(){

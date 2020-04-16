@@ -3,6 +3,7 @@ import { formatDate } from "@angular/common";
 import { HttpClient } from '@angular/common/http';
 import {TabletModelData} from '../data/tablet-model-data';
 import {TabletDb} from '../data/tablet-db';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,9 @@ export class ApiService {
   ];
   private lastBckup: number = 0;
   private lastBckupDate: Date;
+  private downloadJsonHref;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
   getTablets(): TabletModelData[]{
     var tabletListString = JSON.parse(localStorage.getItem(this.tabletsDbKey));
@@ -128,5 +130,12 @@ export class ApiService {
 
   randomIntFromInterval(min : number, max : number) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  generateJsonDownload(toSaveJson : string) : string{
+    var theJSON = JSON.stringify(toSaveJson);
+    var uri = this.sanitizer.bypassSecurityTrustUrl("data:text/json;charset=UTF-8," + encodeURIComponent(theJSON));
+    this.downloadJsonHref = uri;
+    return this.downloadJsonHref;
   }
 }

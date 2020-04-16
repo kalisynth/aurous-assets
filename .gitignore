@@ -44,3 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+ngserve_local.bat
+ngserve_local.txt
